@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Questions Task</title>
+</head>
+<body>
+<!-- 1 -->
+    <h2>Question 1:</h2>
+    <h3>Current Day and Date</h3>
+    <p id="datetime"></p>
+<!-- 2 -->
+    <h2>Question No 2:</h2>
+    <button onclick="windowPrint()">Window content</button><br>
+<!-- 4 -->
+    <h2>Question No 3:</h2>
+    <div>
+        <p>Side 1: 5</p>
+        <p>Side 2: 6</p>
+        <p>Side 3: 7</p>
+        <p id="result"></p>
+      </div>
+<!-- 5 -->
+      <h2>Question No 4:</h2>
+      <h2>Rotated String</h2>
+      <p id="rotatedString"></p>
+<!-- 6 -->
+      <h2>Question No 5:</h2>
+      <h2>Leap Year</h2>
+    <input type="number" id="Input" placeholder="Enter a year">
+    <button id="pressBtn">Check</button>
+    <h3 id="leapyear"></h3>
+<!-- 7 -->
+    <h2>Question No 6:</h2>
+    <h3>1st January will be a Sunday between 2014 and 2050</h3>
+    <p id="checksunday"></p>
+ <!-- 8     -->
+    <h2>Question No 7:</h2>
+    <h2>Guess the Number Game</h2>
+    <p>Guess a number between 1 and 10:</p>
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Check Guess</button>
+    <h4 id="guess"></h4>
+<!-- 10 -->
+    <h2>Question No 8:</h2>
+    <h3>Simple Calculator</h3>
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1"><br><br>
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2"><br><br>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="add()">Add</button><br><br> 
+    <div id="task10"></div>
+     <!-- 12 -->
+    <h2>Question No 9:</h2>
+    <h3>Get website URL</h3>
+    <p id="GetURL"></p>
+<!-- 13 -->
+    <h2>Question No 10:</h2>
+    <h3>Create a variable using a user-defined name</h3>
+    <p id="user-def-name"></p>
+<!-- 15 -->
+    <h2>Question No 11:</h2>
+    <h3>Get Difference</h3>
+    <input id="get_difference" type="number"/>
+    <button id="quest11_btn">Check</button>
+    <p id="question11"></p>
+<!-- 16 -->
+    <h2>Question No 12:</h2>
+    <h3>Triple their sum</h3>
+    <input id="number1" type="number">
+    <input id="number2" type="number">
+    <button id="check_triple">check</button>
+    <p id="question12"></p>
+<!-- 17 -->
+    <h2>Question No 13:</h2>
+    <h3>Absolute Difference Calculator</h3>
+    <p>Enter a number:</p>
+    <input type="number" id="numberInput">
+    <button onclick="calculateDifference()">Calculate</button>
+    <p id="absolute"></p>
+<!-- 18 -->
+    <h2>Question No 14:</h2>
+    <h3>Check for 50</h3>
+    <p>Enter any numbers:</p>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="checkFor50()">Check</button>
+    <p id="numCheck"></p>
+<!-- 20 -->
+    <h2>Question No 15:</h2>
+    <h3>Check Opposite Signs</h3>
+    <input type="number" id="integer1" required placeholder="Enter the first integer">
+    <input type="number" id="integer2" required placeholder="Enter the second integer"><br><br>
+    <button onclick="checkOppositeSigns()">Check</button>
+    <p id="checkit"></p>
+<!-- 22 -->
+    <h2>Question No 16:</h2>
+    <h3>Remove Character</h3>
+    <input type="text" id="inputString" placeholder="Enter a string"><br><br>
+    <input type="number" id="position" min="0" placeholder="Enter the position of character to remove:"><br><br>
+    <button onclick="removeCharacter()">Remove Character</button>
+    <p id="remove-char"></p>
+<!-- 25 -->
+    <h2>Question No 17:</h2>
+    <h3>Check Multiple of 3 or 7 </h3>
+    <input type="number" id="number" placeholder="Enter a positive number"><br><br>
+    <button onclick="checkMultiples()">check</button>
+    <h3 id="question17"></h3>
+<!-- 27 -->
+    <h2>Question No 18:</h2>
+    <h3>String Checker</h3>
+    <input type="text" id="inputString" required placeholder="Enter a string"><br><br>
+    <button onclick="checkString()">Check</button>
+    <h3 id="question18"></h3>
+<!-- 31 -->
+    <h2>Question No 19:</h2>
+    <h3>Largest integer from three integers</h3>
+    <input type="number" id="integ1" required placeholder="Enter First integer">
+    <input type="number" id="integ2" required placeholder="Enter Seond integer">
+    <input type="number" id="integ3" required placeholder="Enter Third integer">
+    <button onclick="findLarge()">check</button>
+    <h3 id="question19"></h3>
+<!-- 32 -->
+    <h2>Question No 20:</h2>
+    <h3>Closet Value</h3>
+    <input type="number" id="sat1" required placeholder="Enter First number">
+    <input type="number" id="sat2" required placeholder="Enter Second number">
+    <button onclick="findCloset()">check</button>
+    <h3 id="question20"></h3>
+<!-- //36 -->
+    <h2>Question No 21:</h2>
+    <h3>Last integer check</h3>
+    <input type="number" id="lastInt1" required placeholder="Enter First Positive integer">
+    <input type="number" id="lastInt2" required placeholder="Enter Second Positive integer">
+    <input type="number" id="lastInt3" required placeholder="Enter Third Positive integer">
+    <button onclick="lastInteger()">check</button>
+    <h3 id="question21"></h3>
+<!-- 37 -->
+    <h2>Question No 22:</h2>
+    <h3>Change Lower Case to Uper</h3>
+    <input type="text" id="stringCase" required placeholder="Enter a string">
+    <button onclick="changeCase()">check</button>
+    <h3 id="question22"></h3>
+<!-- 39 -->
+    <h2>Question No 23:</h2>
+    <h3>Sum of two given integers</h3>
+    <input type="number" id="intt1" required placeholder="Enter First integer">
+    <input type="number" id="intt2" required placeholder="Enter Second integer">
+    <button onclick="sumOfInt()">Sum</button>
+    <h3 id="question23"></h3>
+<!-- 40 -->
+    <h2>Question No 24:</h2>
+    <h3>Check whether one of them is 8 or not</h3>
+    <input type="number" id="digital1" required placeholder="Enter First integer">
+    <input type="number" id="digital2" required placeholder="Enter Second integer">
+    <button onclick="isEight()">Check</button>
+    <h3 id="question24"></h3>
+<!-- 41 -->
+    <h2>Question No 25:</h2>
+    <h3>Return Same or Not</h3>
+    <input type="number" id="snum1" required placeholder="Enter First integer">
+    <input type="number" id="snum2" required placeholder="Enter Second integer">
+    <input type="number" id="snum3" required placeholder="Enter Third integer">
+    <button onclick="checkNum()">Check</button>
+    <h3 id="question25"></h3>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
+
+    <!-- <h4>Question No 1 of Loop Section:</h4>
+    <h5>find bigger integer from two integers</h5>
+    <div id="result2"></div> -->
