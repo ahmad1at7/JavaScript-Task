@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+</head>
+<body>
+  <h1>Stopwatch</h1>
+
+  <script>
+  let stopwatch = {
+  startTime: 0,
+  stopTime: 0,
+  running: false,
+  duration: 0,
+
+  start: function() {
+    if (!this.running) {
+      this.startTime = Date.now();
+      this.running = true;
+      console.log("Stopwatch started");
+    } else {
+      console.log("Stopwatch has already started");
+    }
+  },
+
+  stop: function() {
+    if (this.running) {
+      this.stopTime = Date.now();
+      this.duration += (this.stopTime - this.startTime) / 1000; // convert to seconds
+      this.running = false;
+      console.log("Stopwatch stopped");
+    } else {
+      console.log("Stopwatch is not started");
+    }
+  },
+
+  reset: function() {
+    this.startTime = 0;
+    this.stopTime = 0;
+    this.running = false;
+    this.duration = 0;
+    console.log("Stopwatch reset");
+  }
+};
+
+// Example usage:
+stopwatch.start(); // Stopwatch started
+stopwatch.start(); // Stopwatch has already started
+setTimeout(() => {
+  stopwatch.stop(); // Stopwatch stopped
+  stopwatch.stop(); // Stopwatch is not started
+  console.log("Duration:", stopwatch.duration); // Show duration
+  stopwatch.reset(); // Stopwatch reset
+}, 2000);
+ </script>
+</body>
+</html>
